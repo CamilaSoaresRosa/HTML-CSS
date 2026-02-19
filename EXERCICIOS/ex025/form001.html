@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.js" method="post" autocomplete="off"> <!--autocomplete tira a barra de preenchimento automatico-->
+        <p><label for="jsnome">Nome:</label> 
+            <input type="text" name="nome" id="jsnome">
+        </p>
+
+        <p><label for="jsobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="jsobrenome">
+        </p>
+
+        <p> 
+            <input type="submit" value="Enviar">
+        </p>
+    </form> <!--ID MAIS UTIL PARA JS E USO DO LABLE-->
+
+    <!--LABEL CRIA UMA RELAÇÃO E ENTRE A SOLICITAÇÃO (EXEMPLO = NOME) E A CAIXA DE PREENCHIMENTO-->
+
+    <!--dolicitaççoes ficam expostas na URL, para evitar esse tipo de situação usamos method= post os dados seguem expostos, porem não na url-->
+</body>
+</html>

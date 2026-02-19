@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on"> <!--autocomplete eh o preenchimento automatico, deve obrigatoriamente ter o seu representativo pra sabeer o que completar, ou seja, na area de nome, colocar autocomplete=username-->
+    <p> 
+        <label for="iusu">Usuário:</label>
+        <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" autocomplete="username"> <!--required serve pra preenchimento obrigatório--> <!--suze serve pra alterar o tamanho da caixa, mostra quantos caracteres esta no valor-->
+    </p>
+    <p>
+        <label for="isen">Senha: </label>
+        <input type="password" name="sen" id="isen" required minlength="8" placeholder="minimo de 8 letras"> <!--Minlenght é para o caracteres minimos, podemos solicitar minimos de 8 caracteres por exemplo.-->
+        <!--placeholder eh o texto que mostra dentro da caixa antes de preencher, ex: nome completo.-->
+    </p>
+
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    </form> 
+</body>
+</html>
